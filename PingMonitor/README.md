@@ -39,14 +39,14 @@ Open `config.json` and update:
   "SmtpPort": 587
 }
 
-2️⃣ Run the tool**Edit your configuration**
+2️⃣ **Run the tool**
 
 python ping_monitor.py
 
 
 You’ll see a live ping log output for each target.
 
-3️⃣ Optional: Run automatically on startup
+3️⃣ **Optional: Run automatically on startup**
 
 Use the included batch file:
 
