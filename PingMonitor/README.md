@@ -39,12 +39,12 @@ Open `config.json` and update:
   "SmtpPort": 587
 }
 
-2️⃣ **Run the tool**
-
+### 2️⃣ Run the tool
+If you have Python installed:
+```bash
 python ping_monitor.py
 
 
-You’ll see a live ping log output for each target.
 
 3️⃣ **Optional: Run automatically on startup**
 
