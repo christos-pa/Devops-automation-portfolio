@@ -34,12 +34,52 @@ Open `config.json` and update the values according to your preferred ping freque
 ---
 
 ### 2️⃣ Run the tool
-Run the `.exe` file:
+Run the `.exe` file:  
+ping_monitor.exe  
 
-ping_monitor.exe
+The tool will begin monitoring all devices defined in your `config.json` file and log the results in real time.
 
 ---
 
-### 2️⃣ Optional: Run automatically on startup
+### 3️⃣ Optional: Run automatically on startup
+Use the included batch file:  
+install_ping_monitor_usertray.bat  
 
+To uninstall:  
+uninstall_ping_monitor.bat  
 
+---
+
+## 🧩 Folder Structure
+| File / Folder | Description |
+|----------------|--------------|
+| `ping_monitor.exe` | Compiled executable for Windows |
+| `ping_monitor.py` | Main application script |
+| `config.json` | Example configuration file |
+| `icon.ico` | Tray icon asset |
+| `install_ping_monitor_usertray.bat` | Adds PingMonitor to Windows startup |
+| `uninstall_ping_monitor.bat` | Removes PingMonitor from startup |
+| `PingMonitor_Guide.pdf` | Optional user guide (if included) |
+
+---
+
+## 📸 Example Screenshots
+*(You can upload screenshots later here)*  
+
+![PingMonitor Tray Screenshot](../assets/pingmonitor_tray.png)  
+![Email Alert Example](../assets/pingmonitor_email.png)
+
+---
+
+## 🧠 Notes
+- Sensitive data (like SMTP credentials) should never be uploaded to GitHub.  
+- Consider renaming your local configuration to `config.local.json` for safety.  
+- Works best on Windows 10/11 with Python 3.8+.
+
+---
+
+## 🧑‍💻 Author
+Developed by **Christos Paraskevopoulos**  
+📧 [christos1129@gmail.com](mailto:christos1129@gmail.com)
+
+© 2025 — Part of the [DevOps Automation Portfolio](../README.md)
