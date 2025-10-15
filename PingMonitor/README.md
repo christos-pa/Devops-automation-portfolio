@@ -35,8 +35,11 @@ Open `config.json` and update the values according to your preferred ping freque
 
 ### 2️⃣ Run the tool
 Run the `.exe` file:
-
+```bash
+ping_monitor.exe
 
 ---
 
-### 2️⃣ Run the tool
+### 2️⃣ Optional: Run automatically on startup
+
+
