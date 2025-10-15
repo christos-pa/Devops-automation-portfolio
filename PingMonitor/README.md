@@ -27,32 +27,17 @@ It can run both **interactively** or as a **startup tray service**, making it pe
 
 ## 🚀 Quick Start
 
-1️⃣ **Edit your configuration**
+### 1️⃣ Edit your configuration
+Open `config.json` and update the values according to your preferred ping frequency, alert limits, and email settings.  
+> 💡 The included configuration uses *example* values — replace them before running.
 
-Open `config.json` and update:
-```json
-{
-  "PingFrequencyMs": 2000,
-  "MaxFailuresBeforeAlert": 30,
-  "ToAddresses": ["you@example.com"],
-  "SmtpServer": "smtp.example.com",
-  "SmtpPort": 587
-}
+---
 
 ### 2️⃣ Run the tool
-If you have Python installed:
+Run the `.exe` file:
 ```bash
-python ping_monitor.py
+ping_monitor.exe
 
+---
 
-
-3️⃣ **Optional: Run automatically on startup**
-
-Use the included batch file:
-
-install_ping_monitor_usertray.bat
-
-
-To uninstall:
-
-uninstall_ping_monitor.bat
+### 2️⃣ Run the tool
