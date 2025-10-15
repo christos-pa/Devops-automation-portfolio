@@ -38,3 +38,21 @@ Open `config.json` and update:
   "SmtpServer": "smtp.example.com",
   "SmtpPort": 587
 }
+
+2️⃣ Run the tool**Edit your configuration**
+
+python ping_monitor.py
+
+
+You’ll see a live ping log output for each target.
+
+3️⃣ Optional: Run automatically on startup
+
+Use the included batch file:
+
+install_ping_monitor_usertray.bat
+
+
+To uninstall:
+
+uninstall_ping_monitor.bat
