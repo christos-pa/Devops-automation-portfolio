@@ -64,10 +64,10 @@ uninstall_ping_monitor.bat
 ---
 
 ## 📸 Example Screenshots
-*(You can upload screenshots later here)*  
+[*(You can upload screenshots later here)*  
 
 ![PingMonitor Tray Screenshot](../assets/pingmonitor_tray.png)  
-![Email Alert Example](../assets/pingmonitor_email.png)
+![Email Alert Example](../assets/pingmonitor_email.png)](https://private-user-images.githubusercontent.com/215194551/501944880-66f71b34-df80-4305-950c-6bda0b4ca2e1.PNG?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA2MDg1ODIsIm5iZiI6MTc2MDYwODI4MiwicGF0aCI6Ii8yMTUxOTQ1NTEvNTAxOTQ0ODgwLTY2ZjcxYjM0LWRmODAtNDMwNS05NTBjLTZiZGEwYjRjYTJlMS5QTkc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDE2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAxNlQwOTUxMjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00M2I3MjQ5YTU0MjAzODEyYzhjYzBkZmI3YzExM2VkMjZlZWJkOWM2ZmViMDkzYjc4MjMxY2E5Y2RjNzJkMjQ4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.-1ddVmbgLHfjExNLiSQuzo_Nj2uuJglp3BUQ7PgPD5k)
 
 ---
 
