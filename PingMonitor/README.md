@@ -76,7 +76,7 @@ uninstall_ping_monitor.bat
 ---
 
 ## 🧠 Notes
-- Example configuration only — replace with your own credentials before deployment.
+Example configuration only — replace with your own credentials before deployment.
 
 ---
 
