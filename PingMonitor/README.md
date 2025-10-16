@@ -76,9 +76,7 @@ uninstall_ping_monitor.bat
 ---
 
 ## 🧠 Notes
-- Sensitive data (like SMTP credentials) should never be uploaded to GitHub.  
-- Consider renaming your local configuration to `config.local.json` for safety.  
-- Works best on Windows 10/11 with Python 3.8+.
+- Example configuration only — replace with your own credentials before deployment.
 
 ---
 
