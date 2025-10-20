@@ -1,68 +1,82 @@
-FolderMonitor – Quick Setup Guide
-1️⃣ Files you should have
+# 📂 FolderMonitor
 
-Make sure these files are together in one folder (don’t separate them):
+**FolderMonitor** is a lightweight automation tool that continuously watches selected folders and triggers instant alerts or logs whenever files are added, removed, or modified.  
+Designed for reliability and simplicity, it runs quietly in the background and can be configured to email notifications when changes occur.
 
-FolderMonitor.exe
+---
 
-config.json
+## 📘 Overview
+FolderMonitor is ideal for IT engineers, DevOps professionals, and administrators who need to:
+- Track updates in system directories or shared folders.
+- Monitor incoming/outgoing data feeds.
+- Receive immediate alerts when files change.
+- Keep audit logs for compliance or troubleshooting.
 
-setup.bat
+It can run both as a **background service** or interactively for live testing.
 
-uninstall.bat
+---
 
-2️⃣ First-time setup (only once per computer)
+## ✨ Features
+- 📁 **Real-time monitoring** — detects new, edited, or deleted files instantly.  
+- 📨 **Email alerts** — optional notifications with full event details.  
+- 📄 **Detailed logging** — automatic timestamped log creation.  
+- ⚙️ **Customizable JSON config** — choose which folders to watch and how to react.  
+- 🪟 **Windows compatible** — runs silently or with tray icon support.  
 
-Right-click setup.bat → Run as administrator.
+---
 
-A black window will appear for a few seconds.
+## 🚀 Quick Start
 
-Setup will:
+### 1️⃣ Edit your configuration
+Open `config.json` and update your folder paths, email recipients, and monitoring options.  
+> 💡 The included configuration uses *example* values — replace them before running.
 
-Create the needed folders (inbox, backup).
+---
 
-Add FolderMonitor to Windows Task Scheduler to run every 15 minutes automatically.
+### 2️⃣ Run the tool
+Run the `.exe` file:  
+folder_monitor.exe  
 
-Test-run once to make sure it works.
+The tool will begin watching all defined folders and log or alert whenever changes occur.
 
-3️⃣ How it works
+---
 
-Drop any file into the inbox folder.
+### 3️⃣ Optional: Run automatically on startup
+Use the included batch file:  
+install_folder_monitor_usertray.bat  
 
-Every 15 minutes, FolderMonitor will:
+To uninstall:  
+uninstall_folder_monitor.bat  
 
-Detect new files.
+---
 
-Email them to the address(es) in config.json.
+## 🧩 Folder Structure
+| File / Folder | Description |
+|----------------|--------------|
+| `folder_monitor.exe` | Compiled executable for Windows |
+| `folder_monitor.py` | Main application script |
+| `config.json` | Example configuration file |
+| `icon.ico` | Tray icon asset |
+| `install_folder_monitor_usertray.bat` | Adds FolderMonitor to Windows startup |
+| `uninstall_folder_monitor.bat` | Removes FolderMonitor from startup |
+| `FolderMonitor_Guide.pdf` | Optional user guide (if included) |
 
-Move them to the backup folder.
+---
 
-You can double-click FolderMonitor.exe at any time to run it immediately.
+## 📸 Example Screenshots
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/your-image-link-here" width="320" alt="FolderMonitor Example"><br>
+  <em>Folder Change Alert Example</em>
+</p>
 
-4️⃣ Changing settings
+---
 
-Right-click config.json → Open with Notepad.
+> 🧩 Note: Example configuration only — replace with your own credentials before deployment.
 
-You can edit:
+---
 
-"watch_folder" → folder to monitor.
+## 🧑‍💻 Author
+Developed by **Christos Paraskevopoulos**  
+📧 [christos1129@gmail.com](mailto:christos1129@gmail.com)
 
-"backup_folder" → where files get moved after emailing.
-
-"to_addrs" → list of recipient emails (in quotes, separated by commas).
-
-Save the file.
-
-No need to reinstall — changes apply next run.
-
-5️⃣ Uninstalling
-
-Right-click uninstall.bat → Run as administrator.
-
-This removes the scheduled task from Windows.
-
-💡 Tips:
-
-Do not move the program folder after setup. If you do, run uninstall then setup again.
-
-Keep FolderMonitor.exe and config.json together — they work as a pair.
+© 2025 — Part of the [DevOps Automation Portfolio](../README.md)
