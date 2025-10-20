@@ -64,8 +64,9 @@ uninstall_folder_monitor.bat
 ---
 
 ## 📸 Example Screenshots
+
 <p align="left">
-  <img src="[https://github.com/user-attachments/assets/0f7be37f-aac2-48a6-a132-b5574a9b1b43](https://github.com/christos-pa/Devops-automation-portfolio/issues/2#issue-3531739024)" width="320" alt="Email Alert Example">
+  <img src="https://github.com/christos-pa/Devops-automation-portfolio/issues/2#issue-3531739024" width="320" alt="Email Alert Example">
 </p>
 
 ---
