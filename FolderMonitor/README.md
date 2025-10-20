@@ -64,10 +64,8 @@ uninstall_folder_monitor.bat
 ---
 
 ## 📸 Example Screenshots
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/your-image-link-here" width="320" alt="FolderMonitor Example"><br>
-  <em>Folder Change Alert Example</em>
-</p>
+<img src="https://github.com/user-attachments/assets/abcd1234-5678-90ef-ghij-klmnopqrstuv" width="320" alt="FolderMonitor Example">
+
 
 ---
 
