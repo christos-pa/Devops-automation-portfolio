@@ -1,82 +1,44 @@
 # 🧾 LogMonitor
 
-**LogMonitor** is an automated log-watching tool that continuously scans specified log files for predefined keywords, errors, or warnings.  
-When a match is detected, it instantly records the event and can optionally send an email alert — ensuring no critical issues go unnoticed.
+**LogMonitor** is an advanced automated log-watching and alerting tool designed to run continuously, even after system reboots or user logouts.  
+It monitors specific log files for error patterns or keywords and triggers notifications, file backups, or email alerts whenever an issue is detected.
 
 ---
 
 ## 📘 Overview
-LogMonitor is ideal for system administrators, DevOps engineers, and IT support teams who need to:
-- Detect service errors or failure patterns in real time.  
-- Track critical events across multiple log files.  
-- Maintain uptime and reliability by catching issues early.  
-- Generate audit trails or operational incident reports.
+LogMonitor is built for IT administrators, system engineers, and DevOps operators who need a **reliable 24/7 log monitoring service** that remains active regardless of user login state.
 
-It can run interactively or as a silent background process on Windows.
+The system operates with **two integrated modules**:
+- 🧠 **LogWatcher** — the core monitoring engine that scans defined log files, tracks patterns, timestamps events, and sends notifications or emails when alerts are triggered.
+- 🪟 **TrayHelper** — a lightweight companion app that runs in the Windows tray, provides user visibility, and ensures the monitoring service launches automatically at startup — even before login.
+
+This combination makes LogMonitor ideal for **servers, kiosks, or production systems** that require non-stop event tracking.
 
 ---
 
 ## ✨ Features
-- 🧠 **Keyword detection** — scans logs for configurable patterns.  
-- ⚙️ **Custom rules** — define keywords, log sources, and severity levels in JSON.  
-- 📧 **Email notifications** — send alerts instantly when errors are found.  
-- 🪵 **Timestamped logging** — each event includes date, time, and file reference.  
-- 🪟 **Windows startup ready** — includes batch installer for automatic startup.  
+- 🪵 **Real-time log monitoring** — watches multiple log files simultaneously.  
+- 🔍 **Keyword detection** — define alert triggers in `config.json` for errors, warnings, or custom strings.  
+- ⚙️ **Dual-component architecture** — ensures LogWatcher runs silently while TrayHelper handles user notifications.  
+- ♻️ **Persistent startup** — automatically resumes operation after reboot, before login.  
+- 📧 **Email alerts** — configurable SMTP options to notify teams instantly.  
+- 💾 **Event logging** — creates detailed timestamped logs for each detection.  
+- 🖥️ **Tray icon support** — lets the user pause, resume, or check status via the Windows tray.  
+- 🧰 **Batch setup** — one-click installation or removal with preconfigured `.bat` scripts.
 
 ---
 
 ## 🚀 Quick Start
 
 ### 1️⃣ Edit your configuration
-Open `config.json` and update your monitored log paths, alert keywords, and notification settings.  
-> 💡 The included configuration uses *example* values — replace them before running.
+Open `config.json` and update:
+- Paths of log files you want to monitor  
+- Keywords or patterns to detect  
+- SMTP/email alert settings (optional)
+
+> 💡 The included configuration uses *example* values — replace them before deployment.
 
 ---
 
 ### 2️⃣ Run the tool
-Run the `.exe` file:  
-log_monitor.exe  
-
-The tool will immediately start monitoring the defined log files and alert you when it detects your specified keywords.
-
----
-
-### 3️⃣ Optional: Run automatically on startup
-Use the included batch file:  
-install_log_monitor_usertray.bat  
-
-To uninstall:  
-uninstall_log_monitor.bat  
-
----
-
-## 🧩 Folder Structure
-| File / Folder | Description |
-|----------------|--------------|
-| `log_monitor.exe` | Compiled executable for Windows |
-| `log_monitor.py` | Main application script |
-| `config.json` | Example configuration file |
-| `icon.ico` | Tray icon asset |
-| `install_log_monitor_usertray.bat` | Adds LogMonitor to Windows startup |
-| `uninstall_log_monitor.bat` | Removes LogMonitor from startup |
-| `LogMonitor_Guide.pdf` | Optional user guide (if included) |
-
----
-
-## 📸 Example Screenshots
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/YOUR-LOGMONITOR-IMAGE-LINK-HERE" width="320" alt="LogMonitor Example"><br>
-  <em>Error Detection Example</em>
-</p>
-
----
-
-> 🧩 Note: Example configuration only — replace with your own credentials before deployment.
-
----
-
-## 🧑‍💻 Author
-Developed by **Christos Paraskevopoulos**  
-📧 [christos1129@gmail.com](mailto:christos1129@gmail.com)
-
-© 2025 — Part of the [DevOps Automation Portfolio](../README.md)
+Run the main executable:
