@@ -1,0 +1,7 @@
+[21/08/2025  9:21:56.99] Starting install... 
+[WARN] Could not add Defender exclusion automatically. 
+Creating SYSTEM task: LogWatcher 
+Starting engine now... 
+Creating Startup shortcut: "C:\Users\ZR20010\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\TrayHelper.lnk" 
+Startup shortcut created at: C:\Users\ZR20010\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\TrayHelper.lnk 
+[21/08/2025  9:21:58.90] Install complete. 

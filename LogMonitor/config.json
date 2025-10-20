@@ -1,0 +1,29 @@
+{
+  "LogPaths": [
+    "C:/NMI-CC-Connectors/Terminals/Terminal-*/Logs/*server.log",
+    "C:/NMI-CC-Connectors/Terminals/Terminal-*/Logs/*server.log*YYYY-MM-DD",
+	"C:/input/stuart/LogMonitorv3.1/Terminals/Terminal-*/Logs/*server.log",
+    "C:/input/stuart/LogMonitorv3.1/Terminals/Terminal-*/Logs/*server.log*YYYY-MM-DD"
+  ],
+
+  "Patterns": [
+    {
+      "Name": "Terminal Busy",
+      "Regex": "Terminal Status\\s*:\\s*Unavailable\\s*\\(Terminal Port is busy\\)",
+      "CooldownMinutes": 5
+    }
+  ],
+
+  "Email": {
+    "Server": "smtp.gmail.com",
+    "Port": 587,
+    "UseStartTLS": true,
+    "UseSSL": false,
+    "From": "proredgamer@gmail.com",
+    "Password": "lsvanxxowntdihwq",
+    "To": ["proredgamer@gmail.com", "stuart_chriscoli@scheidt-bachmannuk.com"],
+    "SubjectPrefix": "[LogMonitor]"
+  },
+
+  "PollIntervalSeconds": 2
+}
