@@ -35,7 +35,7 @@ Open `config.json` and update your folder paths, email recipients, and monitorin
 
 ### 2️⃣ Run the tool
 Run the `.exe` file:  
-folder_monitor.exe  
+`folder_monitor.exe`  
 
 The tool will begin watching all defined folders and log or alert whenever changes occur.
 
@@ -43,10 +43,10 @@ The tool will begin watching all defined folders and log or alert whenever chang
 
 ### 3️⃣ Optional: Run automatically on startup
 Use the included batch file:  
-install_folder_monitor_usertray.bat  
+`install_folder_monitor_usertray.bat`  
 
 To uninstall:  
-uninstall_folder_monitor.bat  
+`uninstall_folder_monitor.bat`  
 
 ---
 
