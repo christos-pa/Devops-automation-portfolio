@@ -37,7 +37,7 @@ Open `config.json` and update:
 ### 2️⃣ Run the tool
 Run the main executable:
 
-LogWatcher.exe
+`LogWatcher.exe`
 
 The tool begins monitoring all log files defined in `config.json` and logs detections in real time.
 
@@ -46,7 +46,7 @@ The tool begins monitoring all log files defined in `config.json` and logs detec
 ### 3️⃣ Optional: Run automatically on startup
 To install LogMonitor as a background service:
 
-Install_Both.bat
+`Install_Both.bat`
 
 To uninstall cleanly:
 
