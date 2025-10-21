@@ -38,7 +38,7 @@ Open `config.json` and update:
 ### 2️⃣ Run the tool
 Run the executable:
 
-NMI_Restarter.exe
+'NMI_Restarter.exe'
 
 The application begins monitoring the specified processes and automatically restarts any that stop or hang.
 
@@ -47,11 +47,11 @@ The application begins monitoring the specified processes and automatically rest
 ### 3️⃣ Optional: Enable automatic startup
 To set NMI Restarter to run automatically at system boot:
 
-Install_NMI.bat
+'Install_NMI.bat'
 
 To remove it later:
 
-Uninstall_NMI.bat
+'Uninstall_NMI.bat'
 
 🧩 The installer ensures the utility launches at startup and operates silently in the background.
 
