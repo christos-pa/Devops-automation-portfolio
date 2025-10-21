@@ -1,94 +1,90 @@
-# 🔁 NMI Restarter
+# 🧠 NMI-Restarter
 
-**NMI Restarter** is a lightweight automated recovery utility designed to monitor and restart services or processes that become unresponsive.  
-It ensures continuous uptime for critical systems such as kiosks, terminals, and backend servers by automatically relaunching applications or triggering reboots when required.
+**NMI-Restarter** is a lightweight Windows utility designed to **restart, stop, or monitor NMI payment terminals** with a simple and intuitive GUI.  
+It allows engineers to quickly refresh one or all connected terminals, log restart activity, and view live system status in a single interface.
 
 ---
 
-## 📘 Overview
-NMI Restarter was built for **unattended systems** — where manual intervention isn’t always possible.  
-It continuously checks defined Windows processes or services and automatically restarts them if they stop responding, crash, or close unexpectedly.  
-This tool is especially useful for **remote environments**, **car park systems**, or **public kiosks** that must remain online 24/7.
+## 🖥️ Overview
+
+Built for technical and field engineers who need fast recovery or maintenance actions for NMI terminal connectors.
+
+- Detects all terminals under the configured directory path  
+- Supports **Restart**, **Start**, **Kill**, and **Refresh** operations  
+- Logs all activity to a local file for auditing and diagnostics  
+- GUI interface eliminates the need for PowerShell or manual restarts  
+
+The tool is ideal for support environments running **multiple payment connectors** or kiosk systems.
 
 ---
 
 ## ✨ Features
-- 🔄 **Automatic restart** — restarts unresponsive or stopped processes instantly  
-- 🧠 **Configurable targets** — specify which applications or services to monitor  
-- 🕓 **Timed checks** — set custom intervals for health checks  
-- 🪟 **Runs silently** — minimal footprint with optional tray logo  
-- ♻️ **Persistent startup** — can be installed to run on Windows boot  
-- 💾 **Activity logging** — records all restarts with timestamps for auditing  
-- 🧰 **Batch setup** — includes installer and uninstaller scripts for quick deployment  
+
+- 🧩 **Auto-detect terminals** — scans directories and lists connected terminals  
+- ⚡ **One-click Restart / Restart All** — instantly relaunch terminals  
+- 🧰 **Live Controls** — buttons for `Start`, `Kill`, and `Refresh`  
+- 🪶 **Lightweight** — portable executable, no installation required  
+- 📄 **Logging** — generates a detailed `restart.log` file under `/Logs`  
+- ⚙️ **Configurable JSON** — `settings.json` defines connector paths and parameters  
 
 ---
 
 ## 🚀 Quick Start
 
-### 1️⃣ Edit your configuration
-Open `config.json` and update:
-- Names or executable paths of services/processes to monitor  
-- Interval time (in seconds) between each health check  
-- Optional restart or reboot actions  
-
-> 💡 The provided configuration contains example values — adjust them before use.
+### 1️⃣ Configure the tool  
+Edit your `settings.json` file to match your terminal folder path, for example:  
+C:\NMI-CC-Connectors\Terminals
 
 ---
 
-### 2️⃣ Run the tool
-Run the executable:
+### 2️⃣ Run the tool  
+Simply run the `.exe` file:  
+NmiRestarterTray.exe
 
-`NMI_Restarter.exe`
-
-The application begins monitoring the specified processes and automatically restarts any that stop or hang.
-
----
-
-### 3️⃣ Optional: Enable automatic startup
-To set NMI Restarter to run automatically at system boot:
-
-`Install_NMI.bat`
-
-To remove it later:
-
-`Uninstall_NMI.bat`
-
-🧩 The installer ensures the utility launches at startup and operates silently in the background.
+The interface will display all detected terminals and provide full control over restart actions.
 
 ---
 
-## 🧩 Folder Structure
+## 🧩 GUI Overview
+
+The application provides the following controls:
+
+| Control | Description |
+|----------|-------------|
+| **Dropdown Menu** | Select which terminal to control |
+| **Refresh** | Re-scans for active terminals |
+| **Start** | Launches the selected terminal |
+| **Kill** | Terminates the selected terminal process |
+| **Restart** | Restarts the selected terminal |
+| **Restart All** | Restarts all detected terminals simultaneously |
+| **Log Window** | Displays timestamped messages and status updates |
+
+All actions are recorded in the `restart.log` file within the `/Logs` directory.
+
+---
+
+## 🪄 Folder Structure
+
 | File / Folder | Description |
-|----------------|--------------|
-| `config.json` | Example configuration (process names, intervals, actions) |
-| `NMI_Restarter.exe` | Main monitoring and restart executable |
-| `Install_NMI.bat` | Adds NMI Restarter to Windows startup |
-| `Uninstall_NMI.bat` | Removes NMI Restarter from startup |
-| `NMI_Restarter.ico` | Tray/logo icon (branding only) |
-| `NMI_Restarter_ReadMe.pdf` | Optional documentation |
-| `logs/` | Folder for storing restart logs and activity reports |
-
----
-
-## 🧠 Operation Flow
-1. The tool loads the configuration and begins periodic checks of defined targets.  
-2. If a monitored process stops, hangs, or becomes unresponsive:  
-   - The process is terminated (if needed).  
-   - It is relaunched automatically.  
-3. Each restart event is logged with a timestamp for diagnostics.  
-4. On reboot, NMI Restarter starts automatically and resumes operation — no user login required.
+|----------------|-------------|
+| `NmiRestarterTray.exe` | Compiled Windows executable |
+| `settings.json` | Configuration file containing terminal path |
+| `Logs/` | Directory where restart.log is automatically created |
+| `README.md` | Documentation for the tool |
 
 ---
 
 ## 📸 Example Screenshot
+
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/YOUR-NMI-IMAGE-LINK-HERE" width="320" alt="NMI Restarter Screenshot"><br>
-  <em>Example showing automatic restart after detected process failure</em>
+  <img src="https://drive.google.com/uc?export=download&id=11cuuVgRQx6un_SLX6yZDOeA6sWdl9yLu" width="320" alt="NMI Restarter Example Screenshot">
 </p>
 
 ---
 
-> 🧩 Note: Example configuration only — replace with your own monitored services and settings before deployment.
+## 📦 Download
+You can download the executable directly from:  
+👉 [NMI-Restarter.exe (Google Drive)](https://drive.google.com/uc?export=download&id=11cuuVgRQx6un_SLX6yZDOeA6sWdl9yLu)
 
 ---
 
@@ -96,4 +92,4 @@ To remove it later:
 Developed by **Christos Paraskevopoulos**  
 📧 [christos1129@gmail.com](mailto:christos1129@gmail.com)
 
-© 2025 — Part of the [DevOps Automation Portfolio](../README.md)
+© 2025 — Part of the **DevOps Automation Portfolio**
