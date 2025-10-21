@@ -81,7 +81,7 @@ Uninstall_Both.bat
 
 ## 📸 Example Screenshot
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/88d2dfe4-64e8-4d4e-8306-e4cceb2f1672" width="320" alt="LogMonitor Screenshot"><br>
+  <img src="https://github.com/user-attachments/assets/164a196e-48f8-44e9-83dc-30f439367f4d" width="320" alt="LogMonitor Screenshot"><br>
   <em>Example alert captured from monitored logs</em>
 </p>
 
