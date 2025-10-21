@@ -18,6 +18,22 @@ The tool is ideal for support environments running **multiple payment connectors
 
 ---
 
+## 🧠 Development Notes
+
+NMI-Restarter was developed in **C# (.NET Framework)** using **Windows Forms (WinForms)** for its lightweight GUI.  
+The goal was to simplify recovery operations for **NMI payment terminals** by providing engineers with quick visual control over process restarts.  
+
+Key technical highlights:
+- Built around `System.Diagnostics.Process` to manage terminal sessions.  
+- Implements directory scanning to dynamically list active terminal connectors.  
+- Uses asynchronous execution to prevent UI freezing during restart sequences.  
+- Writes structured logs (`restart.log`) for every event, improving traceability.  
+- Portable `.exe` build for instant use on support laptops without installation.
+
+This design ensures stability in live support environments where quick recovery and minimal downtime are critical.
+
+---
+
 ## ✨ Features
 
 - 🧩 **Auto-detect terminals** — scans directories and lists connected terminals  
