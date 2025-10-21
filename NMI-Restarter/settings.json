@@ -1,0 +1,6 @@
+{
+  "TerminalsRoot": "C:\\NMI-CC-Connectors\\Terminals",
+  "JarName": "CC_UK_NMI.jar",
+  "LogDir": "C:\\Ops-Tools\\NMI-Restarter\\Logs",
+  "JavaPath": ""
+}
