@@ -77,7 +77,7 @@ All actions are recorded in the `restart.log` file within the `/Logs` directory.
 ## 📸 Example Screenshot
 
 <p align="left">
-  <img src="https://drive.google.com/uc?export=download&id=11cuuVgRQx6un_SLX6yZDOeA6sWdl9yLu" width="320" alt="NMI Restarter Example Screenshot">
+  <img src="https://github.com/user-attachments/assets/858c68f1-54b9-426f-87f5-209b7261eb30" width="320" alt="NMI Restarter Example Screenshot">
 </p>
 
 ---
