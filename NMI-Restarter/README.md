@@ -39,7 +39,7 @@ C:\NMI-CC-Connectors\Terminals
 
 ### 2️⃣ Run the tool  
 Simply run the `.exe` file:  
-NmiRestarterTray.exe
+`NmiRestarterTray.exe`
 
 The interface will display all detected terminals and provide full control over restart actions.
 
