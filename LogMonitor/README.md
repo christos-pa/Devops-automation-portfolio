@@ -50,7 +50,7 @@ Install_Both.bat
 
 To uninstall cleanly:
 
-Uninstall_Both.bat
+`Uninstall_Both.bat`
 
 🧩 The installer configures the service to start at Windows boot so monitoring continues through reboots and before any user logs in.
 
