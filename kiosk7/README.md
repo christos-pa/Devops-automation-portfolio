@@ -69,8 +69,11 @@ All necessary runtime files are included — simply copy the folder to any Windo
 ---
 
 ## 💾 Download
+
 📥 **Download the executable package:**  
-[Download Kiosk7.exe (Google Drive)](https://drive.google.com/file/d/1WCVjuryNo53_Ye4vxg85dvdVUjrmhbCc/view?usp=drive_link)
+The `.exe` file was too large to upload directly here, but you can download it using the link below:  
+
+[➡️ **Download Kiosk7.exe (Google Drive)**](https://drive.google.com/file/d/1WCVjuryNo53_Ye4vxg85dvdVUjrmhbCc/view?usp=drive_link)
 
 ---
 
