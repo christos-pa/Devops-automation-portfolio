@@ -1,17 +1,18 @@
 # 🖥️ Kiosk7
 
-A secure, standalone **kiosk-mode browser** built with WebView2.  
-Designed for fixed-purpose public displays, terminals, or information points that restrict user access to specific websites.
+**Kiosk7** is a secure, standalone **Windows kiosk browser** built with **C# (.NET)** using **Microsoft Visual Studio** and the **WebView2 engine**.  
+It locks the computer into a single full-screen website view, blocking all keyboard shortcuts, system keys, and desktop access — ideal for terminals, receptions, or self-service points.
 
 ---
 
 ## 🚀 Features
-- Full-screen locked browsing experience  
+- Full-screen browser restricted to specific URLs  
 - Configurable **start URL**, **exit PIN**, and **domain allowlist**  
-- On-screen keyboard for touch-enabled kiosks  
+- On-screen keyboard for touchscreen kiosks  
 - Optional visible EXIT button (for testing)  
-- **User cannot escape** the kiosk via keyboard shortcuts, Windows key, or Ctrl + Alt + Del  
-- Runs without needing to install extra runtimes — all required `.dll` files are included
+- **Completely locked environment** — user cannot escape using Ctrl + Alt + Del, Alt + Tab, or Windows key  
+- Fully **portable** — no installations required, runs directly from the folder  
+- Built and tested in **Microsoft Visual Studio**
 
 ---
 
@@ -22,20 +23,29 @@ https://www.bbc.com
 
 This example loads the BBC homepage when the kiosk launches.
 
-On first startup, a **setup window** allows you to enter:
-- **Start URL**
-- **Exit PIN**
-- **Allowed domains**
-- Optional: show EXIT button or remember settings for next time  
+When first opened, a **setup window** allows you to:
+- Enter **Start URL**
+- Set **Exit PIN**
+- Define **Allowed domains**
+- Optionally enable the red **EXIT button** or remember settings for next time  
 
 ---
 
-## 🧩 How It Works
+## 📸 Screenshots
 
-When launched, **Kiosk7.exe** starts a Chromium-based WebView2 instance in fullscreen mode, blocking all system shortcuts.  
-It uses a local configuration file (`settings.cfg`) to remember user preferences between sessions.
+### 🪟 Setup Window  
+When launched, Kiosk7 prompts the user to configure the startup URL, PIN, and optional features.  
 
-If the `Kiosk7.exe.WebView2/` folder is missing, the app will automatically recreate it at runtime — no installation needed.  
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/0e5b08ff-3046-4187-9b1f-0e9df7fcdb78" width="420" alt="Kiosk Setup Window">
+</p>
+
+### 🌐 Locked Kiosk Mode  
+Once started, the browser runs in full-screen mode. The user can only exit using the configured PIN or on-screen controls.
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/916b5869-b52e-43ab-b548-1d87016becc5" width="420" alt="Kiosk Browser Locked View">
+</p>
 
 ---
 
@@ -54,23 +64,20 @@ Kiosk7/
 ├─ PenImc_cor3.dll  
 └─ wpfgfx_cor3.dll  
 
-🧠 **Note:**  
-- The app automatically generates a `Kiosk7.exe.WebView2` folder during first launch.  
-- This folder only stores runtime cache (no sensitive data) and can be ignored or deleted safely.  
+All necessary runtime files are included — simply copy the folder to any Windows 10/11 system and launch **Kiosk7.exe**.
 
 ---
 
-## 🛠️ Requirements
-- Windows 10 or 11 (x64)
-- WebView2 Runtime (Evergreen) — usually preinstalled on Windows 10/11
-
-No manual dependencies are required; all `.dll` files are provided for compatibility.
+## 💾 Download
+📥 **Download the executable package:**  
+[Download Kiosk7.exe (Google Drive)](https://drive.google.com/file/d/1WCVjuryNo53_Ye4vxg85dvdVUjrmhbCc/view?usp=drive_link)
 
 ---
 
 ## 💡 Development Notes
-Built in **C# (.NET 6)** using **WinForms** and **WebView2**.  
-Implements fullscreen kiosk lockdown logic, restricted navigation control, and safe local caching.  
+Developed in **Microsoft Visual Studio** using **C# (.NET 6)** and **WinForms**.  
+Implements kiosk lockdown logic, WebView2 browser embedding, exit PIN validation, and keyboard interception.  
+Designed to run as a lightweight standalone application for any Windows system.
 
 ---
 
