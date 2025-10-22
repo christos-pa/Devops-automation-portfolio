@@ -98,6 +98,22 @@ All actions are recorded in the `restart.log` file within the `/Logs` directory.
 
 ---
 
+## 📐 Design & Implementation
+
+NMI-Restarter was developed in **C# (.NET Framework)** using **Windows Forms (WinForms)** for its lightweight GUI.  
+The goal was to simplify recovery operations for **NMI payment terminals** by providing engineers with quick visual control over process restarts.  
+
+**Technical highlights:**
+- Built around `System.Diagnostics.Process` for process management  
+- Implements directory scanning to dynamically populate terminal lists  
+- Uses asynchronous operations to prevent UI blocking during restarts  
+- Logs all restart actions to `restart.log` for traceability  
+- Packaged as a **standalone executable** (no installation required)
+
+This architecture ensures reliability in live support environments where **uptime and responsiveness** are critical.
+
+---
+
 ## 📦 Download
 You can download the executable directly from:  
 👉 [NMI-Restarter.exe (Google Drive)](https://drive.google.com/uc?export=download&id=11cuuVgRQx6un_SLX6yZDOeA6sWdl9yLu)
