@@ -75,6 +75,10 @@ The `.exe` file was too large to upload directly here, but you can download it u
 
 [➡️ **Download Kiosk7.exe (Google Drive)**](https://drive.google.com/file/d/1WCVjuryNo53_Ye4vxg85dvdVUjrmhbCc/view?usp=drive_link)
 
+⚠️ **Important:**  
+Make sure the downloaded `.exe` file is placed **in the same folder** as the `.dll` and configuration files listed above before running.  
+If you move the executable outside this folder, the application will fail to start.
+
 ---
 
 ## 💡 Development Notes
