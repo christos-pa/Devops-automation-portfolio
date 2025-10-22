@@ -44,7 +44,7 @@ When launched, Kiosk7 prompts the user to configure the startup URL, PIN, and op
 Once started, the browser runs in full-screen mode. The user can only exit using the configured PIN or on-screen controls.
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/916b5869-b52e-43ab-b548-1d87016becc5" width="420" alt="Kiosk Browser Locked View">
+  <img src="https://github.com/user-attachments/assets/9b06871d-b8f3-4b99-8558-80071cd485b2" width="420" alt="Kiosk Browser Locked View">
 </p>
 
 ---
