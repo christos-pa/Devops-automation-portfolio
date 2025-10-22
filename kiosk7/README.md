@@ -37,7 +37,7 @@ When first opened, a **setup window** allows you to:
 When launched, Kiosk7 prompts the user to configure the startup URL, PIN, and optional features.  
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/0e5b08ff-3046-4187-9b1f-0e9df7fcdb78" width="420" alt="Kiosk Setup Window">
+  <img src="https://github.com/user-attachments/assets/050fb9e2-1acc-4c2c-bb18-8f683d42242c" width="420" alt="Kiosk Setup Window">
 </p>
 
 ### 🌐 Locked Kiosk Mode  
